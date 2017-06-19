@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Input} from '@angular/core';
 
 @Component({
     selector: 'thisis',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
     styles: [`h2, p {color:red;}`]
 })
 export class ThisIsComponent {
-  componentName = "Sparta";
+  @Input() componentName: string;
 }
